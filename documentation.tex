@@ -1,0 +1,77 @@
+\documentclass[12pt,a4paper,openbib,titlepage]{report}
+\usepackage{graphicx} % for includegraphics
+\usepackage[titletoc]{appendix} % for appendix page
+\usepackage{pdfpages} % for including pdf files
+\usepackage{setspace} % for \doublespacing
+\usepackage{multirow} % for multirow table
+\usepackage{tikz} % for drawing
+\usepackage{tikz-uml} % for uml diagram
+\usepackage[backend=biber,style=numeric,citestyle=authortitle-ibid]{biblatex}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[pdftex, plainpages = false, pdfpagelabels, 
+pdfpagelayout = OneColumn, % create hyperlinks in citations,figures,tables and refs.
+                bookmarks,
+                bookmarksopen = true,
+                bookmarksnumbered = true,
+                linktocpage,
+                colorlinks = true,
+                linkcolor = black,
+                urlcolor  = black,
+                citecolor = black,
+                anchorcolor = black,
+                hyperindex = true,
+                ]{hyperref}
+
+\makeatother
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\topmargin}{-1.6cm}
+\setlength{\leftmargin}{0.5cm}
+\setlength{\rightmargin}{0.5cm}
+\setlength{\textheight}{24.00cm} 
+\setlength{\textwidth}{15.00cm}
+\parindent 0pt
+\parskip 5pt
+
+\renewcommand{\baselinestretch}{1.25} % for line spacing
+
+
+%------------------------- FlowChart ------------------------------%
+\tikzstyle{startstop} = [circle,draw=black,fill=black,thick,inner sep=0pt,minimum size=5mm]
+\tikzstyle{process} = [rectangle,rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, draw=black, fill=white]
+\tikzstyle{decision} = [diamond, minimum width=1cm, minimum height=1cm, text centered, draw=black, fill=white]
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+%------------------------- End FlowChart -------------------------%
+
+
+\addbibresource{cite.bib} % include citation file
+
+\begin{document}
+\include{cover}
+\pagenumbering{roman}
+\include{approval}
+\include{DECLARATION}
+\include{CONTACT_INFO}
+\include{Abstract}
+\include{ACKNOWLEDGMENT}
+\tableofcontents
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\include{abbreviations}
+\pagenumbering{arabic}
+\include{chp1}
+\include{chp2}
+\include{chp3}
+\include{chp4}
+\include{chp5}
+\include{chp6}
+\include{appendix}
+\addcontentsline{toc}{chapter}{Reference}
+\nocite{*}
+\printbibliography[title={References}]
+\end{document}

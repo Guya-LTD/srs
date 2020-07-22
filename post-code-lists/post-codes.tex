@@ -1,0 +1,782 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+\begin{tabular}{|c|l|l|c|}
+\hline 
+\rule[-1ex]{0pt}{2.5ex} Postcode & Administration / Region / Zone & Locality / Area & Delivery Area \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Addis Ababa-Addis Ababa Zone 1 & Addis Ababa & 1 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Addis Ababa-Addis Ababa Zone 1 & Addis Ababa, Addis Ababa Stadium & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Addis Ababa-Addis Ababa Zone 1 & Addis Ababa, Bole International Airport & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Addis Ababa-Addis Ababa Zone 2 & Alem Gena, Addis Ababa Liddetta Airport & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Addis Ababa-Addis Ababa Zone 2 & Alem Gena, Mebrat Hayel Stadium & 1 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Eydu & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Gebre Guracha & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Golje Giyorgis Bete Kiristyan & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Muke T\'uri & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Robe & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Sembo & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Sendafa & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Sheno & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Sululta & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Tulu Milki & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1150 & Addis Ababa-Addis Ababa Zone 2 & Alem Gena & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 1230 & Addis Ababa-Addis Ababa Zone 6 & Ak'ak'i Besek'a & 1 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Abomsa & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Adele & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Bekeksa & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Carri & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Dino & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Gololcha & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Mechara & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Seru & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Shek Husen & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Tinsa\'E Birhan & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Asasa & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Bek\'oji & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Bilbilo & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Buccio & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Kofele & 2 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Sire (2) & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2140 & Oromia-Arssi & Agere Sisay & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2140 & Oromia-Arssi & Dera & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2140 & Oromia-Arssi & Hamda Diksis & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2140 & Oromia-Arssi & Huruta & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2140 & Oromia-Arssi & Robi & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 2140 & Oromia-Arssi & Sire & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3000 & Dire Dawa-Dire Dawa & Dire Dawa & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3000 & Dire Dawa-Dire Dawa & Dire Dawa, Dire Dawa Stadium & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3020 & Dire Dawa-Dire Dawa & Dire Dawa, Aba Tenna Dejazmatch Yilma & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3020 & Dire Dawa-Dire Dawa & Melka Jebti & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Balbalaiar & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Denan & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Dibugur & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Gabro & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Gelhalali & 3 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Gode & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Gode & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Ididole & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Ididole, Gode Airport & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Imi & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Megwin & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Melka Bafeta & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Melka Teka & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3040 & Somali-Gode & Obdamer & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & Giadabele & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K\'ebri Dehar & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K\'ebri Dehar, Kabri Dar Airport & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K\'orahe & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & Shilabe & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & Uarandab & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Bargheile & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Busle & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & El Bi'oba & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & El K'oran & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Ferfer & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Godder & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & K\'elafo & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Kunyo & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Mustahil & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Sulsul & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Balleh Ad & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Domo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Dudub & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Elmo Dere & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Gedlegube & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Gedlegube & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Geladi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Meridleh & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Shehada & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Welwel & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3120 & Somali-Warder & Werder & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3200 & Harari-Harari & Harar & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3200 & Harari-Harari & Harar, Harar Jugol the Fortified Historic Town & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3200 & Harari-Harari & Harer & 2 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3200 & Harari-Harari & Harer, Harrar Bira Stadium & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3220 & Dire Dawa-Dire Dawa & Alemaya & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3220 & Dire Dawa-Dire Dawa & K\'ersa & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Aware & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Bircot & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Daga Medo & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Daror & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Degeh Bur & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Dibber Uin & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Dibile & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & El Fud & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Gardor & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Gos & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Hascul & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Maregh Dughleh & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Sasabeneh & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Fiq & Dehen & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Fiq & Fik & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Fiq & Gandaba & 3 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Fiq & Godeli & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Fiq & Hamarro Hadad & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Fiq & Segag & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Amaro Special Woreda & Derba & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Amaro Special Woreda & Gembo & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Amaro Special Woreda & Mande & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Arba Minch\' & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Arba Minch\', Arba Minch Airport & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Bak\'Ule & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Belta & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Ch\'ench\'a & 3 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Dofo & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Felege Neway & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Feregosa & 3 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Gelts\'a & 3 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Bako & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 44200 & Southern Nations Nationalities and People's Region-Semen Omo & Bako, Baco Airport & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Bopa & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Bulchi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Dimeka & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Gorra & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Jinka & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Kelem & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Kelem, Lower Valley of the Omo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & K\'ey Afer & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Turmi & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Weyt\'o & 3 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & Gena & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & Gobesa & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & Robe & 2 \\  
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & T\'icho & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4520 & Oromia-Bale & Adaba & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4520 & Oromia-Bale & Dinsho & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4520 & Oromia-Bale & Oborso & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Agarfa & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Dagaio & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Galcia & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Goba & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Goro & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Goro (2) & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Haro Dibe & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Megalo & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Meliyu & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Mena & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Robe & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4540 & Oromia-Bale & Robe, Robe Airport & 2 \\ 
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4560 & Oromia-Bale & Dodola & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4560 & Oromia-Bale & Kokosa & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4560 & Oromia-Bale & Nansebo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4560 & Oromia-Bale & Sorfta & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4560 & Oromia-Bale & Suca & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Aldie & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Darde & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Dibo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Ginir & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Ginnir & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Ginnir, Ghinnir Airport & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Gurgur & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Idabo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Kololo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Kosi & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4580 & Oromia-Bale & Ramo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4600 & Southern Nations Nationalities and People's Region-Semen Omo & Bole & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4600 & Southern Nations Nationalities and People's Region-Semen Omo & Wishaye & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Abba Kella & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Amaro & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Ameya & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Angila & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Banja & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Beto & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Bodollo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Bulk\'i & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Ch\'ida & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Gena Bosa & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Guelta & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Tarch\'a Sodo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Zanga & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5040 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Bonga & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5040 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Dimbira & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5040 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Durra & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5040 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Felege Selam & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5040 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Shewa Gimira & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5040 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Shishinda & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Bambu & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Bebeka & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Chele & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Jemu & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Kibish & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Maji & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5060 & Southern Nations Nationalities and People's Region-Bench Maji & Mui & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5140 & Southern Nations Nationalities and People's Region-Bench Maji & Bendi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5140 & Southern Nations Nationalities and People's Region-Bench Maji & Mizan Teferi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5140 & Southern Nations Nationalities and People's Region-Bench Maji & Mizan Teferi, Mizan Teferi Airport & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5160 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Gech'a & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5160 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Tepi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5160 & Southern Nations Nationalities and People's Region-Keficho Shekicho & Wedifa & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5220 & Benshangul-Gumaz-Asosa & Abatimbo el Gumas & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5220 & Benshangul-Gumaz-Asosa & Asosa & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5220 & Benshangul-Gumaz-Asosa & Asosa, Asosa Airport & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5220 & Benshangul-Gumaz-Asosa & Bambishi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5220 & Benshangul-Gumaz-Asosa & Belfodiyo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 1 & Gambela & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 1 & Gambela, Gambela Airport & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 1 & Gilawo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 1 & Itang & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 1 & Seriti & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Abobo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Agenga & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Apanauane & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Ciam & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Gesi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Gog & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Periet & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 2 & Udia & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 3 & Buol & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 3 & Tirgol & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 3 & Tori & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 5440 & Gambela-Gambela Zone 3 & Ugat & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Adet & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Bahir Dar & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Debre May & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Dilish & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Gorgora & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & K'unzila & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Wemberya & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6000 & Amhara-Mirab Gojam & Zege & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6040 & Amhara-Agew Awi & Addis kidan & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6040 & Amhara-Agew Awi & Adis K'Idame & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6040 & Amhara-Agew Awi & Dangila & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6040 & Amhara-Agew Awi & Enjebara & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6040 & Amhara-Agew Awi & Injibara & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6040 & Amhara-Agew Awi & Wahats'a & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Abu Mendi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Almahel & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Bagusta & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Bumbadi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Dongur & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Guba & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6060 & Benshangul-Gumaz-Metekel & Omedla & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6140 & Amhara-Mirab Gojam & Bure & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6140 & Amhara-Mirab Gojam & Dengel & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6140 & Amhara-Mirab Gojam & Finote Selam & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6140 & Amhara-Mirab Gojam & Jiga & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Abderafi & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Abertege & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Adi Ar Kay & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Amba Giyorgis & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Angereb & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Bagena & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Bagena Amba & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Debark\' & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Debark\', Simien National Park & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Gira Felase & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Gonder & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Gonder, Fasil Ghebbi Gondar Region & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Wag Hemra & Abergele & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Adi Remoz & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Akwi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Biagundi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Birkuta & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Himora & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Om Hajer & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Om Hajer, Humera Airport & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Saint Mikkae & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6220 & Tigray-Mirabawi & Sittona & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6240 & Amhara-Debub Gondar & Adis Zemen & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6240 & Amhara-Debub Gondar & Bilbaho & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6240 & Amhara-Debub Gondar & Gwada & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6240 & Amhara-Debub Gondar & Ibnat & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6240 & Amhara-Debub Gondar & Werota & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6240 & Amhara-Debub Gondar & Yifag & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Aykel & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Azezo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Azezo, Gondar Airport & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Bahita & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Ch'Wahit & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Degoma & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Delgi & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Ez Zair & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Gedabiet & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Gendawa & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Mendaba & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Metema & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Nargadaga Deset & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6260 & Amhara-Semen Gondar & Wagna & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6300 & Amhara-Debub Gondar & Debre Tabor & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6300 & Amhara-Debub Gondar & Gasay & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6300 & Amhara-Debub Gondar & Mahdere Maryam & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6300 & Amhara-Debub Gondar & Nefas Mewch'a & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 6300 & Amhara-Debub Gondar & Sali & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7000 & Tigray-Debubawi & Adi Gudom & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7000 & Tigray-Debubawi & Kwiha & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7000 & Tigray-Debubawi & Kwiha, Alula Aba Nega Airport & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7000 & Tigray-Debubawi & Mek'ele & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7000 & Tigray-Debubawi & Samre & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Adi Hana & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Adi K'eyih & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Debub & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Dum & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Inda Medhani Alem & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & K\'orbeta & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Maych\'ew & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7040 & Tigray-Misrakawi & Adigrat & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7040 & Tigray-Misrakawi & Bizet & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7040 & Tigray-Misrakawi & Debir & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7040 & Tigray-Misrakawi & Frewayni & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7040 & Tigray-Misrakawi & Idaga Hamus & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7060 & Tigray-Mehakelegnaw & Adi Abun & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7060 & Tigray-Mehakelegnaw & Adwa & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7060 & Tigray-Mehakelegnaw & Enticcio & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7060 & Tigray-Mehakelegnaw & Inda Aba Ts'Ahma & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7060 & Tigray-Mehakelegnaw & Siero & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7060 & Tigray-Mehakelegnaw & Yaha & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Abi Adi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Abiy Adi & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Agbe & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Aksum & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Aksum, Aksum & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Aksum, Axum Airport & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Dimbaza & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Gelebeda & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Hagareselam & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & May K\'inet\'al & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Sele & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Adi Dairo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Adi Sak'A & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Amba Madre & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Denbe Bengul & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Gunguno & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & K\'Ali & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & May Barya & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Sheraro & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Shiyaboni & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Togo Ber & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Yirga & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7140 & Tigray-Debubawi & Dara & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Abraha Azba & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Agula & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Dugum & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Hawzen & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Wik\'ro & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Aroley & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Asale & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Berahle & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Dalol & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Deba\'Ina & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Mengela & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Shehet & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Urucur & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 4 & Didigsala & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 4 & Sifani & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Amhara-Semen Wello & Dilbe & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7220 & Amhara-Semen Wello & Hamusit & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Alito & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Ch'ifra & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Dermadu & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Dubti & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Eli Wiha & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Harbu & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Logiya & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Mile & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Serdo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 1 & Tendaho & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Algeyta & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Amibara & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Arraha & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Awash & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Dedecha & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Gawani & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Teo & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Teo, Lower Valley of the Awash & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7240 & Afar-Afar Zone 3 & Trena & 2 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Afambo & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Asayita & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Dedai & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Deda\'I & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Elida\'ar & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Lofefle & 3 \\
+\hline 
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Manda & 3 \\
+\hline 
+\end{tabular} 
+\end{document}
