@@ -1,12 +1,54 @@
-\documentclass[12pt,a4paper]{report}
-\usepackage[utf8]{inputenc}
+\documentclass[12pt,a4paper,openbib,titlepage]{report}
+\usepackage{graphicx} % for includegraphics
+\usepackage[titletoc]{appendix} % for appendix page
+\usepackage{pdfpages} % for including pdf files
+\usepackage{setspace} % for \doublespacing
+\usepackage{multirow} % for multirow table
+\usepackage{tikz} % for drawing
+\usepackage{tikz-uml} % for uml diagram
+\usepackage[backend=biber,style=numeric,citestyle=authortitle-ibid]{biblatex}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage[pdftex, plainpages = false, pdfpagelabels, 
+pdfpagelayout = OneColumn, % create hyperlinks in citations,figures,tables and refs.
+                bookmarks,
+                bookmarksopen = true,
+                bookmarksnumbered = true,
+                linktocpage,
+                colorlinks = true,
+                linkcolor = black,
+                urlcolor  = black,
+                citecolor = black,
+                anchorcolor = black,
+                hyperindex = true,
+                ]{hyperref}
+
+\makeatother
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\topmargin}{-1.6cm}
+\setlength{\leftmargin}{0.5cm}
+\setlength{\rightmargin}{0.5cm}
+\setlength{\textheight}{24.00cm} 
+\setlength{\textwidth}{15.00cm}
+\parindent 0pt
+\parskip 5pt
+\usepackage{longtable} % for multi-page table
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=7mm,
+ top=13mm,
+ }
+
 \begin{document}
-\begin{tabular}{|c|l|l|c|}
+\thispagestyle{empty}
+\begin{longtable}{|p{2cm}|p{6.5cm}|p{8cm}|p{1.5cm}|}
 \hline 
-\rule[-1ex]{0pt}{2.5ex} Postcode & Administration / Region / Zone & Locality / Area & Delivery Area \\ 
+\rule[-1ex]{0pt}{5.5ex} \textbf{Postcode} & \textbf{Administration/Region/Zone} & \textbf{Locality} / \textbf{Area} & \textbf{Delivery Area} \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 1000 & Addis Ababa-Addis Ababa Zone 1 & Addis Ababa & 1 \\
 \hline 
@@ -24,7 +66,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Golje Giyorgis Bete Kiristyan & 1 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Muke T\'uri & 1 \\ 
+\rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Muke T'uri & 1 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 1000 & Oromia-Semen Shewa & Robe & 1 \\ 
 \hline 
@@ -60,7 +102,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Shek Husen & 2 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Tinsa\'E Birhan & 2 \\ 
+\rule[-1ex]{0pt}{2.5ex} 2040 & Oromia-Arssi & Tinsa'E Birhan & 2 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 2120 & Oromia-Arssi & Asasa & 2 \\ 
 \hline 
@@ -126,9 +168,9 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K\'ebri Dehar & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K\'ebri Dehar, Kabri Dar Airport & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K'ebri Dehar, Kabri Dar Airport & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K\'orahe & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & K'orahe & 3 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 3060 & Somali-Korahe & Shilabe & 3 \\ 
 \hline 
@@ -146,7 +188,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Godder & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & K\'elafo & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & K'elafo & 3 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 3080 & Somali-Afder & Kunyo & 3 \\ 
 \hline 
@@ -186,7 +228,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 3220 & Dire Dawa-Dire Dawa & Alemaya & 2 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 3220 & Dire Dawa-Dire Dawa & K\'ersa & 2 \\ 
+\rule[-1ex]{0pt}{2.5ex} 3220 & Dire Dawa-Dire Dawa & K'ersa & 2 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 3260 & Somali-Degehabur & Aware & 3 \\
 \hline 
@@ -232,15 +274,15 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Amaro Special Woreda & Mande & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Arba Minch\' & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Arba Minch' & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Arba Minch\', Arba Minch Airport & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Arba Minch', Arba Minch Airport & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Bak\'Ule & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Bak'Ule & 3 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Belta & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Ch\'ench\'a & 3 \\  
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Ch'ench'a & 3 \\  
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Dofo & 3 \\ 
 \hline 
@@ -248,7 +290,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Feregosa & 3 \\  
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Gelts\'a & 3 \\  
+\rule[-1ex]{0pt}{2.5ex} 4400 & Southern Nations Nationalities and People's Region-Semen Omo & Gelts'a & 3 \\  
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Bako & 3 \\ 
 \hline 
@@ -268,11 +310,11 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Kelem, Lower Valley of the Omo & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & K\'ey Afer & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & K'ey Afer & 3 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Turmi & 3 \\ 
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Weyt\'o & 3 \\ 
+\rule[-1ex]{0pt}{2.5ex} 4420 & Southern Nations Nationalities and People's Region-Semen Omo & Weyt'o & 3 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & Gena & 2 \\ 
 \hline 
@@ -280,7 +322,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & Robe & 2 \\  
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & T\'icho & 2 \\ 
+\rule[-1ex]{0pt}{2.5ex} 4500 & Oromia-Arssi & T'icho & 2 \\ 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4520 & Oromia-Bale & Adaba & 2 \\ 
 \hline 
@@ -362,15 +404,15 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Bodollo & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Bulk\'i & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Bulk'i & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Ch\'ida & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Ch'ida & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Gena Bosa & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Guelta & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Tarch\'a Sodo & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Tarch'a Sodo & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 4620 & Southern Nations Nationalities and People's Region-Semen Omo & Zanga & 3 \\
 \hline 
@@ -520,9 +562,9 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Bagena Amba & 2 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Debark\' & 2 \\
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Debark' & 2 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Debark\', Simien National Park & 2 \\
+\rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Debark', Simien National Park & 2 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 6200 & Amhara-Semen Gondar & Gira Felase & 2 \\
 \hline 
@@ -620,9 +662,9 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Inda Medhani Alem & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & K\'orbeta & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & K'orbeta & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Maych\'ew & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7020 & Tigray-Debubawi & Maych'ew & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7040 & Tigray-Misrakawi & Adigrat & 3 \\
 \hline 
@@ -664,7 +706,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Hagareselam & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & May K\'inet\'al & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & May K'inet'al & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7080 & Tigray-Mehakelegnaw & Sele & 3 \\
 \hline 
@@ -678,7 +720,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & Gunguno & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & K\'Ali & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & K'Ali & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7120 & Tigray-Mirabawi & May Barya & 3 \\
 \hline 
@@ -700,7 +742,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Hawzen & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Wik\'ro & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7160 & Tigray-Misrakawi & Wik'ro & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Aroley & 3 \\
 \hline 
@@ -710,7 +752,7 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Dalol & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Deba\'Ina & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Deba'Ina & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7220 & Afar-Afar Zone 2 & Mengela & 3 \\
 \hline 
@@ -770,13 +812,13 @@
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Dedai & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Deda\'I & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Deda'I & 3 \\
 \hline 
-\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Elida\'ar & 3 \\
+\rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Elida'ar & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Lofefle & 3 \\
 \hline 
 \rule[-1ex]{0pt}{2.5ex} 7260 & Afar-Afar Zone 1 & Manda & 3 \\
 \hline 
-\end{tabular} 
+\end{longtable} 
 \end{document}
