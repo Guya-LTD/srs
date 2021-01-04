@@ -7,11 +7,24 @@ The selection of a technology is a decisive process aimed to obtain the optimal 
 \section{Design Class Diagram}
 
 \subsection{Class Diagram Description}
+\includepdf[page=-, pagecommand={}]{pdf/Guya-LTD-api.pdf}
 
 \section{Database Design}
-\subsection{Normalization}
+%\subsection{Normalization}
 
 \subsection{Physical Data Model}
+\begin{figure}[!h]
+%\hspace{-3cm}
+\includegraphics[width=17cm, keepaspectratio]{usecases/shop_database_diagram}
+\caption{Physical data model - Guya E-commerce}
+\end{figure}
+\clearpage
+
+\begin{figure}[!h]
+\includegraphics[width=20cm, keepaspectratio]{images/xpress_database_diagram}
+\caption{Physical data model - Guya E-commerce}
+\end{figure}
+\clearpage
 
 
 \section{User Interface Design}
@@ -118,7 +131,7 @@ The address book is the only section with a slightly complex design. This compon
 \subsection{Mail Interface Templates}
 
 \begin{figure}[!h]
-%\includepdf[width=15cm, pagecommand={}]{invoice_template}
+\includepdf[width=15cm, pagecommand={}]{pdf/invoice}
 \caption{Invoice Template - Guya E-commerce}
 \end{figure}
 \clearpage
@@ -163,51 +176,101 @@ Labels are used at every checkpoint of Guya Express shipping process. Starting f
 A post code (also known locally in various English speaking countries throughout the world as a postcode, post code, PIN or ZIP code) is a series of letters or digits or both, sometimes including spaces or punctuation, included in a postal address for the purpose of sorting mail. 
 Conversion is done using post code references listed in Appendix C.
 
+\begin{figure}[!h]
+\includegraphics[height=10cm,, keepaspectratio]{images/fpg_shipping}
+\caption{Fulfillment Shipping Label template}
+\end{figure}
+\clearpage
+
+\begin{figure}[!h]
+\includegraphics[height=22cm,, keepaspectratio]{images/shipping_label}
+\caption{Shipping Label template}
+\end{figure}
+\clearpage
+
 
 \section{System Architecture}
 \subsection{Component Diagram}
+In component diagram we depicts a simplified version of the Component diagram.
+Each UML Component describes a microservice, thus component’s name maps one-
+to-one with the name of the microservice. Additionally. We have also highlighted
+relations among microservices by means of UML Usage relations, i.e. the dashed
+arrows labeled with <<use>>.
 
-\subsection{Deployment Diagram}
-
-\subsection{Network Diagram}
-
-
-\subsection{System Physical Architecture}
-% three tire system 	
-  
-\subsection{System Logical Architecture}
-% MVC(Model view controller architecute)	
-  
-\subsection{Description of Used Technologies}
-
-\subsubsection{Docker}
-\subsubsection{Docker Compose}
-\subsubsection{ReactJs}
-\subsubsection{ELK Stack}
-\paragraph{Logstash}
-\paragraph{Elastic Search}
-\paragraph{kibana}
-\subsubsection{Kong Api Gateway}
-\subsubsection{Konga}
-\subsubsection{Sass Css}
-\subsubsection{Openmap}
-\subsubsection{Makefile}
-\subsubsection{Typescript}
-\subsubsection{Webpack}
-\subsubsection{Bit.dev}
-\subsubsection{Storybook}
-\subsubsection{PatternLab}
-\subsubsection{Jade}
-\subsubsection{SQLAlchemy}
-
-\subsubsection{Handlebars.js}
-
-\begin{figure}
-\center
-\includegraphics[keepaspectratio, width=120px]{images/handlebarsjs.png}
-\caption{handlebars.js logo.}
+\begin{figure}[!h]
+\includegraphics[height=12cm,, keepaspectratio]{images/shop_component_diagram}
+\caption{Component Diagram - Guya E-commerce}
 \end{figure}
 
-Handlebars is the web template system used in this project to manage client-side templates. It is a JavaScript implementation of the platform-independent Mustache project, that allows to render input data in a template using a very clean syntax. Mustache has a so-called logic-less. template syntax because there are no explicit control flow statements, all needed logic comes exclusively from the data in the form of booleans, arrays or lambdas\footnote{Lambda is an anonymous function, meaning that it is not bound to any kind of identifier.} .On the contrary Handlebars templates are compiled, allowing to define helpers to reuse code for presentation. It also comes with built-in helpers to control the default flow of the template, such as loops or conditional statements. Handlebars comes also with better support for paths
-to access the data. In short, this solution makes easier to implement templates than Mustache while still keeping logic separated from presentation. There is another project, Dust.js, with the same strong points as Handlebars and with useful additional features like template composition. Apparently is a better choice but the project has been abandoned for two years, maybe the reason why Handlebars has the largest community. During the last year LinkedIn has been contributing actively to a separated Dust.js project that
-the company is using for its website [Bas12]. Regardless it has been considered that Handlebars is a safer option, since the additional features are not indispensable for this project.
+\begin{figure}[!h]
+\includegraphics[height=10cm,, keepaspectratio]{images/xpress_component_diagram}
+\caption{Component Diagram - Guya E-commerce}
+\end{figure}
+\clearpage
+
+\subsection{Deployment Diagram}
+\begin{figure}[!h]
+\hspace{-2cm}
+\includegraphics[height=23cm, width=20cm, keepaspectratio]{usecases/shop_deployment_diagram.png}
+\caption{Deployment Diagram - Guya E-commerce}
+\end{figure}
+
+\begin{figure}[!h]
+\hspace{-2cm}
+\includegraphics[height=17cm,, keepaspectratio]{images/xpress_deployment_diagram}
+\caption{Deployment Diagram - Guya Express}
+\end{figure}
+\clearpage
+
+\subsection{Network Diagram}
+A network diagram is a visual representation of network architecture. It maps out
+the structure of a network with a varity of different symbols and line connections.
+It is the ideal way to share the layout of a network because the visual presentation
+makes it easier for users to understand how items are connected.
+
+\begin{figure}[!h]
+\includegraphics[width=17cm]{images/network_diagram}
+\caption{Network Diagram - Guya E-commerce and Express}
+\end{figure}
+\clearpage
+
+
+%\subsection{System Physical Architecture}
+% three tire system 	
+  
+%\subsection{System Logical Architecture}
+% MVC(Model view controller architecute)	
+  
+%\subsection{Description of Used Technologies}
+
+%\subsubsection{Docker}
+%\subsubsection{Docker Compose}
+%\subsubsection{ReactJs}
+%\subsubsection{ELK Stack}
+%\paragraph{Logstash}
+%\paragraph{Elastic Search}
+%\paragraph{kibana}
+%\subsubsection{Kong Api Gateway}
+%\subsubsection{Konga}
+%\subsubsection{Sass Css}
+%\subsubsection{Openmap}
+%\subsubsection{Makefile}
+%\subsubsection{Typescript}
+%\subsubsection{Webpack}
+%\subsubsection{Bit.dev}
+%\subsubsection{Storybook}
+%\subsubsection{PatternLab}
+%\subsubsection{Jade}
+%\subsubsection{SQLAlchemy}
+
+%\subsubsection{Handlebars.js}
+
+%\begin{figure}
+%\center
+%\includegraphics[keepaspectratio, width=120px]{images/handlebarsjs.png}
+%\caption{handlebars.js logo.}
+%\end{figure}
+
+%Handlebars is the web template system used in this project to manage client-side templates. It is a JavaScript implementation of the platform-independent Mustache project, that allows to render input data in a template using a very clean syntax. Mustache has a so-called logic-less. template syntax because there are no explicit control flow statements, all needed logic comes exclusively from the data in the form of booleans, arrays or lambdas\footnote{Lambda is an anonymous function, meaning that it is not bound to any kind of identifier.} .On the contrary Handlebars templates are compiled, allowing to define helpers to reuse code for presentation. It also comes with built-in helpers to control the default flow of the template, such as loops or conditional statements. Handlebars comes also with better support for paths
+%to access the data. In short, this solution makes easier to implement templates than Mustache while still keeping logic separated from presentation. There is another project, Dust.js, with the same strong points as Handlebars and with useful additional features like template composition. Apparently is a better choice but the project has been abandoned for two years, maybe the reason why Handlebars has the largest community. During the last year LinkedIn has been contributing actively to a separated Dust.js project that
+%the company is using for its website [Bas12]. Regardless it has been considered that Handlebars is a safer option, since the additional features are not indispensable for this project.

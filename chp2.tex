@@ -194,162 +194,27 @@ The following are the advantages of proposed systems
 %\end{itemize}
 
 
-\section{Overview Of The Microservices}
-\subsection{User Service}
-\subsection{Order Service}
-\subsection{Catalog Service}
-\subsection{Inventory Service}
-\subsection{Gatekeeper Service}
-\subsection{Payment Service}
-\subsection{Pricing Service}
-\subsection{Logging Service}
-\subsection{Xpress Service}
-\subsection{Storybook Repository}
-\subsection{Bits Repository}
-\subsection{Guya's Cascading Style Sheets (GCSS)}
-\subsection{Python Logstash}
-\subsection{Alfa-Geez Node Repository}
-\subsection{Tracking Service}
+%\section{Overview Of The Microservices}
+%\subsection{User Service}
+%\subsection{Order Service}
+%\subsection{Catalog Service}
+%\subsection{Inventory Service}
+%\subsection{Gatekeeper Service}
+%\subsection{Payment Service}
+%\subsection{Pricing Service}
+%\subsection{Logging Service}
+%\subsection{Xpress Service}
+%\subsection{Storybook Repository}
+%\subsection{Bits Repository}
+%\subsection{Guya's Cascading Style Sheets (GCSS)}
+%\subsection{Python Logstash}
+%\subsection{Alfa-Geez Node Repository}
+%\subsection{Tracking Service}
 Tracking is the technology used to determine the location of a vehicle using different methods like GPS and
 other navigation system operating via satellite and ground based stations.
 
 % Diagram of tracking(Block diagram)
-\subsubsection{Active and passive tracking}
-Several types of vehicle tracking devices exist. Typically they are classified as "passive" and
-"active". "Passive" devices store GPS location, speed, heading and sometimes a trigger event
-such as key on or off, door open or closed. Once the vehicle returns to a predetermined point, the
-device is removed and the data downloaded to a computer for evaluation. Passive systems
-include auto download type that transfer data via wireless download. "Active" devices also
-collect the same information but usually transmit the data in real-time via cellular or satellite
-networks to a computer or data center for evaluation.
-
-Passive trackers do not monitor movement in real-time. When using a passive GPS tracker, you
-will not be able to follow every last move that a tracked person or object makes. Instead,
-information that is stored inside of a passive tracker must be downloaded to a computer. Once
-tracking details have been downloaded, it is then possible to view tracking details.
-
-After we have gathered all of the information we need from a passive tracker, we can place the
-tracker back on the same (or different) vehicle. Aside from the fact that a passive tracking device
-is entirely reliable, the main reason people choose passive trackers is that these devices are less
-expensive than active trackers. Most passive GPS tracking devices are not attached to a monthly
-fee, which makes these trackers affordable.
-
-In contrast to passive devices, active GPS trackers will allow one to view tracking data in real-
-time. As soon as we place an active tracker on a vehicle, we will be able to view location, stop
-duration, speed, and other tracking details from the comfort of your home or office. Active GPS
-trackers are ideal when it comes to monitoring vehicle that need to be tracked at regular time
-interval.
-
-While active tracking devices are more expensive than passive devices (most come with monthly
-fees), this expensive is usually justified. An active GPS tracker that comes with a reliable
-interface (and excellent tracking software), and you will be able to track anything or anyone
-quickly and efficiently.
-
-When most people picture a GPS tracking device, they are picture a real-time tracker. These
-trackers can be attached to any object while a person monitors all activity from a home
-computer. For example, if you were to place a real-time tracker on a vehicle, you could then
-watch as the vehicle makes stops, takes alternate routes, and sits idling – all in real-time. GPS
-trackers that work on a real-time basis are usually considered "active" trackers, while those that
-do not include real-time tracking are considered "passive" trackers.
-
-There are many advantages associated with a real time tracker. The most important advantage is
-that the GPS locater is convenience. Rather than waiting to download data to a computer (as is
-the case with most passive trackers), a tracker that works in real-time does not require any
-waiting. Since real-time trackers come with software that allows a user to track an object in real-
-time, watching any object's progress is simply a matter of sitting at a computer.
-
-Many modern vehicle tracking devices combine both active and passive tracking abilities: when
-a cellular network is available and a tracking device is connected it transmits data to a server;
-when a network is not available the device stores data in internal memory and will transmit
-stored data to the server later when the network becomes available again.
-
-Historically vehicle tracking has been accomplished by installing a box into the vehicle, either
-self-powered with a battery or wired into the vehicle's power system. For detailed vehicle
-locating and tracking this is still the predominant method; however, many companies are
-increasingly interested in the emerging cell phone technologies that provide tracking of multiple
-entities.
-
-\subsubsection{Different Types of Tracking System}
-There are three main types of GPS vehicle tracking that are widely used. They all use active
-devices. They are:
-\begin{itemize}
-	% numeric
-	\item Automatic Vehicle Location (AVL) system
-	\item Assisted Global Positioning System (AGPS)
-	\item Radio Frequency Identification (RFID)
-\end{itemize}
-
-\paragraph{Automatic Vehicle Location (AVL) system}
-AVL system is an advanced method to
-track and monitor any remote vehicle with the device that receives and sends signals
-through GPS satellites. AVL comprises of Global Positioning System (GPS) and
-Geographic Information System (GIS) in order to provide the real geographic location of
-the vehicle. AVL system consists of PC-based tracking software to dispatch, a radio
-system, GPS receiver on the vehicle and GPS satellites. Among the two types of AVL,
-GPS-based and Signpost-based, GPS-based system is widely used. The tracking method
-uses GPS satellite to locate the vehicle equipped with GPS modem by sending satellite
-signals. The accuracy of the tracking method depends on the AVL system which provides
-the vehicle location with the accuracy of about 5m to 10m. The information transmitted
-by the tracking system to the base station is location, speed, direction, mileage, start and stop information and status of vehicle. The information of the vehicle is often transmitted
-to the central control system (base station) from the vehicle after every 60 seconds. If the
-base station receives the data, it displays it on a computerized map. GPS receiver on the
-vehicle receives the signals of its geographic location. Then the receiver sends that data
-plus speed, direction, etc. to the base station via a radio system. If AVL system is used to
-track a vehicle the average cost of per vehicle is \$1 to \$2 per day. The system can provide
-additional services like: vehicle route replay facility, external sensor data, speed alerts.
-The system also has some limitation; using the AVL system we cannot get accurate,
-complete and sufficient satellite data in dense urban areas or indoors and when
-transmission is blocked by natural obstructions (heavy tree cover) or many buildings. It
-can also occur in RF-shadowed environments and under unfriendly Radio Frequency
-(RF) conditions. Sometimes, a position fix can be impossible.
-
-\paragraph{Assisted GPS (AGPS) system}
-In AGPS system, a terrestrial RF network is used to
-improve the performance of GPS receivers as it provides information about the satellite
-constellation directly to the GPS receivers. AGPS uses both mobiles and cellular
-networks to locate the accurate positioning information. AGPS is used to overcome some
-limitations of GPS. With unassisted GPS, locating the satellites, receiving the data and
-confirming the exact position may take several minutes. The tracking method of AGPS
-uses GPS satellites to track the vehicles. A GPS receiver in vehicle is always in contact
-with 4 satellites (3 satellites determine latitude, longitude and elevation and the fourth
-provides element of time) hence it never fails to detect the location of a vehicle. Location
-of the vehicle is provided with accuracy of between 3m and 8m, and speed of 1km using
-this method. Information like Vehicle location, average speed, direction, path traversed in
-a selected period and alerts (Engaged/Unengaged, speed limit, vehicle breakdown and
-traffic jam) are delivered by the tracking system to the base station. The system provides
-continuous updates after every 10 seconds while the vehicle is in motion. It also provides
-data storage for up to 1 year. The location is retrieved from the GPS device and relayed
-as a SMS using the cell phone by the Client Node to the Base station. This system is
-more expensive than the AVL system as it gives continuous update of the vehicle
-location. If the user needs update after every 10 seconds then the subscription for this
-system is \$1.33 per day per vehicle and if the user needs update after every 5 seconds it is \$1.67 per day per vehicle. The system can provide further services like atomic time
-(Accurate Time Assistance). There is a "panic" button. When pressed, you can contact an
-operator and he or she will help you out or keep you safe from accidents or hijacks. The
-system has also some limitations as GSM network is used to transmit data from the
-vehicle to the base station, the cost of sending SMS is a major concern to be considered.
-
-\paragraph{Radio Frequency Identification (RFID) System}
-RFID is an automatic identification
-method using devices called tags to store and remotely retrieves data. RFID uses radio
-waves to capture data from tags. The tracking method of RFID is comprised of three
-components: tag (passive, semi passive and active), reader (antenna or integrator) and
-software (middleware). RFID tag which contains microelectronic circuits sends the
-vehicle information to a remote RFID reader which is then read via the software. This
-system provides the location of the vehicle with the accuracy of 4m to 6m. Information
-such as location of the vehicle, mileage and speed are delivered by the tracking system to
-the centre. The information is updated every one minute. The information is sent to and
-received from RFID tags by a reader using radio waves. RFID reader, basically a radio
-frequency (RF) transmitter and receiver, is controlled by a microprocessor or digital
-signal processor (DSP). RFID reader with an attached antenna reads data from RFID
-tags.
-
-
-\subsubsection{Display GPS Location}
-\paragraph{Google Map}
-
-\paragraph{OpenMap}
-
-\paragraph{SMS}
+%\subsubsection{Active and passive tracking}
 
 
 \section{System Requirement Specification}
@@ -1255,9 +1120,6 @@ Below figure describes activity diagram for both sub-projects any for any user i
 \end{figure}
 
 \clearpage
-
-S TATE	
-  DIAGRAMS 	
   
 \subsection{State Diagrams}
 There are two interesting state diagrams of this system, both related to the cart element. The first diagram (Figure \ref{cart-state-diagram}) describes how a cart instance changes until it becomes a complete order. As the diagram below shows, the current cart is the initial state, which allows to change its contents in multiple ways, such as adding or removing line items or selecting a shipping address. Once the checkout is finished the cart becomes an order, being this an irreversible change. From now on the order can only change from an open to a complete state, and vice versa.
@@ -1285,16 +1147,16 @@ When the user provides the billing information and finalizes the checkout, the s
 \subsection{Analysis Class Diagram}
 In the world of information architecture, UML still has a strong foothold. Therefore class diagrams are still desired, even when designing RESTful APIs, We have there sought a way to represent that pieces that make up an 	API as UML and found that although this is somewhat intuitive, there is not one set way of doing this.
 
-Identifying variable (properties) which is done by writing $<<$representation$>>$ below it is the representation name, identifying resources is done by writing $<<$resource$>>$ below the resource is the name of REST API name. In the methods variables, variable that begins with a capital letter represent a set(array or json) of messages, except for Accept-Language which is a header, which are refereed to (mapped to) representation and for the arrow is a path. For example for login resource the resource name is login, representation/message is Login, path is /v1/users/login and method will be put(Accept-Language, [username, password]).
+Identifying variable (properties) which is done by writing $<<$representation$>>$ below it is the representation name, identifying resources is done by writing $<<$resource$>>$ below the resource is the name of REST API name. In the methods variables, variable that begins with a capital letter represent a set(array or json) of messages, except for Accept-Language which is a header, which are refereed to (mapped to) representation and for the arrow is a path. For example for login resource the resource name is login, representation/message is Login, path is /v1/users/login and method will be put(Accept-Language, [username, password]). See Chapter 3 Class Diagram Description
 
 
-\begin{figure}[!h]
+%\begin{figure}[!h]
 %\vspace*{-8cm}
-\hspace*{-3cm}
+%\hspace*{-3cm}
 %\noindent
 %\includegraphics[height=22cm, angle=90, keepaspectratio]{}
-\caption{Class diagram (API diagram) - Guya E-commerce}
-\end{figure}
-\clearpage
+%\caption{Class diagram (API diagram) - Guya E-commerce}
+%\end{figure}
+%\clearpage
 
 
